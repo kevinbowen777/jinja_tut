@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def template_test():
-    return render_template("template.html",
+    return render_template("body.html",
                            my_string="In like a lion",
                            my_list=[0, 1, 2, 3, 4, 5])
 
