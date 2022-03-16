@@ -1,10 +1,11 @@
 from flask import Flask, render_template
+import datetime
 
 app = Flask(__name__)
 
 
 @app.template_filter()
-def datetimefilter(value, format='%Y%/%m/%d %H:%M'):
+def datetimefilter(value, format='%Y/%m/%d %H:%M'):
     """convert a datetime to a different format."""
     return value.strftime(format)
 
@@ -18,6 +19,7 @@ def template_test():
                            my_string="April is the cruelest month",
                            my_list=[0, 1, 2, 3, 4, 5],
                            title="Home ",
+                           current_time=datetime.datetime.now(),
                            )
 
 
@@ -27,6 +29,7 @@ def home():
                            my_string="Welcome Home",
                            my_list=[6, 7, 8, 9, 10, 11],
                            title="Home ",
+                           current_time=datetime.datetime.now(),
                            )
 
 
@@ -36,6 +39,7 @@ def about():
                            my_string="What is this about?",
                            my_list=[12, 13, 14, 15, 16, 17],
                            title="About ",
+                           current_time=datetime.datetime.now(),
                            )
 
 
@@ -45,6 +49,7 @@ def contact():
                            my_string="Give us a ring!",
                            my_list=[18, 19, 20, 21, 22, 23],
                            title="Contact ",
+                           current_time=datetime.datetime.now(),
                            )
 
 
