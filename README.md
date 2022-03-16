@@ -10,7 +10,7 @@ A sandbox for experimenting with Jinja2 templates
  - [Primer on Jinja Templating](https://realpython.com/primer-on-jinja-templating/)
 
 ## Screenshots
-![jinja_sample](https://github.com/kevinbowen/jinja_tut/blob/master/images/jinja_sample.png)
+![jinja_sample](https://github.com/kevinbowen777/jinja_tut/blob/master/images/jinja_sample.png)
 
 ---
 [![License](https://img.shields.io/badge/license-MIT-green)](https://github.com/kevinbowen777/jinja_tut/blob/master/LICENSE)
